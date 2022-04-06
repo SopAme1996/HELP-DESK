@@ -9,9 +9,9 @@ require_once("../Models/Ticket.php");
 
 class Email extends PHPMailer{
 
-    //variable que contiene el correo del destinatario
+    //variable que contiene el correo del destinatario  checa tu bandeja de  enviados si  esta el mensaje o algo ahi
     protected $gCorreo = 'LE16081484@merida.tecnm.mx';
-    protected $gContrasena = 'Cerebro11';
+    protected $gContrasena = 'S0p0rt310!';
     //variable que contiene la contraseña del destinatario
 
     public function ticket_abierto($tick_id){
@@ -25,7 +25,7 @@ class Email extends PHPMailer{
             $correo = $row["usu_correo"];
         }
 
-        //IGual//
+        //IGual
         $this->IsSMTP();
         $this->Host = 'smtp.office365.com';//Aqui el server
         $this->Port = 587;//Aqui el puerto
