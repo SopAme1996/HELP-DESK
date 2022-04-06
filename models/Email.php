@@ -9,7 +9,7 @@ require_once("../Models/Ticket.php");
 
 class Email extends PHPMailer{
 
-    //variable que contiene el correo del destinatario  checa tu bandeja de  enviados si  esta el mensaje o algo ahi
+    //variable que contiene el correo del destinatario  checa tu bandeja de  enviados si  esta el mensaje o algo ahi.
     protected $gCorreo = 'LE16081484@merida.tecnm.mx';
     protected $gContrasena = 'S0p0rt310!';
     //variable que contiene la contraseña del destinatario
